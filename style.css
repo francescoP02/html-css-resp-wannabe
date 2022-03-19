@@ -72,7 +72,7 @@ img {
   clear: both;
 }
 
-@media screen and (max-width:420px){
+@media screen and (min-width: 420px) , (max-width:768px){
   *{
     padding: 0;
     margin: 0;
@@ -84,6 +84,69 @@ img {
     margin: 3em 7em;
     /* background-color: bisque; */
     margin: 0 ;
+    color: white;
+    font-weight: 600;
+  }
+
+  .row h3 {
+    padding: 1em 0;
+  }
+
+  #lezioni .row{
+    background-color: orange;
+  }
+
+  .row h1{
+    margin-bottom:2em ;
+    text-decoration: underline;
+  }
+
+  .row img{
+    width: 100px;
+    height:100px;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right{
+    width: 100%;
+    margin-bottom: 2em;
+
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+  #why .row img {
+    background-color: #428bca;
+  }
+
+  .container.grey {
+    background-color: blue;
+  }
+
+  #why .row{
+   background-color: orange;
+  }
+  }
+
+@media screen and (max-width:419px){
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .row{
+    width: 100%;
+    margin: 3em 7em;
+    /* background-color: bisque; */
+    margin: 0 ;
+    color: black;
+    font-weight: 400;
   }
 
   #lezioni .row{
@@ -113,15 +176,15 @@ img {
     width: 100%;
   }
 
-#why .row img {
-  background-color: #428bca;
-}
+  #why .row img {
+   background-color: #428bca;
+  }
 
-.container.grey {
-  background-color: white;
-}
+  .container.grey {
+    background-color: white;
+  }
 
-#why .row{
-  background-color: #f2f2cd;
-}
+  #why .row{
+    background-color: #f2f2cd;
+  }
 }
